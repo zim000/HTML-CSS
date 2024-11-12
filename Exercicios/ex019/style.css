@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+h2 {
+    background-color: blue;
+    color: white;
+
+}
+p{
+  color: black;  
+
+
+}
+
+body {
+    background-color: rgb(190, 214, 214);
+
+}
