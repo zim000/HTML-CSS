@@ -53,6 +53,10 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+
+    p{
+        padding-bottom: 2em;
+    }
 }
 
 
@@ -64,11 +68,14 @@ section{
 .imagem{
     background-color: rgba(0, 0, 0, 0.354);
     color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.503);
 
     p{
         padding: 5px;
         width: 400px;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.3);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.596);
+        
     }
 }
 
@@ -79,4 +86,50 @@ footer{
     text-align: center;
     color: white;
     padding: 7px;
+}
+
+
+
+#img01{
+    background-image: url(pacote-d012/imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#img02{
+    background-image: url(pacote-d012/imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.escondido{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 2s;
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1.5s;
+    transform: translateX(0);
+}
+
+
+strong{
+    font-size: 1.5em;
+    padding-left: 3px;
+    color: red;
+    opacity: 0.5;
+    
+}
+
+strong:hover{
+    opacity: 1;
+    cursor: pointer;
 }
